@@ -168,6 +168,11 @@ h2:hover {
     background-color: #fff;
 }
 
+.skills article h3,
+.projects article h3 {
+    margin-top: 10px;
+}
+
 .projects article img,
 .skills article img {
     border-radius: 10px;
