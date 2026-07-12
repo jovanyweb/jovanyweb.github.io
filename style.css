@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Tahoma;
+    background-color: #fafafa;
+}
+
+html {
+    scroll-padding: 50px;
+
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #5122d3;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    list-style: none;
+
+}
+
+nav ul li a {
+
+    font-size: 18px;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background-color: #5122d3;
+}
+
+header h1 {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+header p {
+    color: #d6d6d6;
+}
+
+h2 {
+    color: #5122d3;
+    text-align: center;
+    margin: 30px auto;
+    padding: 5px;
+    border-radius: 5px;
+    border: 3px solid #5122d3;
+    width: fit-content;
+    position: relative;
+    transition: 0.3s;
+}
+
+h2::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transition: 0.3s;
+    z-index: -1;
+}
+
+h2:hover::after {
+
+    background-color: #5122d3;
+}
+
+h2:hover {
+    color: #fff;
+}
+
+.history {
+    display: flex;
+    flex-direction: column;
+
+    margin: 10px 25%;
+    gap: 30px;
+    position: relative;
+}
+
+.history article {
+    left: 50%;
+    position: relative;
+    max-width: 50%;
+    padding-left: 20px;
+}
+
+
+
+.history article::after {
+    z-index: -1;
+    content: "";
+    translate: -50%;
+    background-color: #fff;
+    border: 5px solid #5122d3;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 25px;
+    border-radius: 50%;
+    margin-right: auto;
+    transition: all 0.5s;
+}
+
+.history article:hover::after {
+    background-color: #5122d3;
+}
+
+
+.history article::after {
+
+    right: calc(100% + 5px);
+    translate: 50%;
+
+}
+
+.history::before {
+    content: "";
+    z-index: -2;
+    position: absolute;
+    top: 10px;
+    width: 5px;
+    left: 49.5%;
+    translate: -50%;
+    background-color: #5122d3;
+    height: 98%;
+}
+
+
+
+.skills,
+.projects {
+    display: block;
+    gap: 20px;
+    width: fit-content;
+    margin: auto;
+}
+
+
+.skills article,
+.projects article {
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 5px 2px #00000049;
+    border-radius: 20px 10px;
+    transition: all 0.3s;
+    background-color: #fff;
+}
+
+.projects article img,
+.skills article img {
+    border-radius: 10px;
+}
+
+.skills article:hover {
+
+    transform: skewX(-5deg);
+
+}
+
+section {
+    margin: auto;
+    width: 75%;
+}
+
+section {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #5122d3;
+}
+
+.skills-section {
+
+    padding: 20px;
+}
+
+.projects article a {
+    color: black;
+    text-decoration: none;
+
+}
+
+.projects article img {
+    width: 100%;
+}
+
+.projects article .image-container {
+
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.projects article .image-container::before {
+
+    content: "";
+    left: 0;
+    top: 0;
+    position: absolute;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.projects article:hover .image-container::before {
+
+    background-color: rgba(81, 34, 211, 0.5);
+}
+
+footer {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer .footer-main {
+
+    display: block;
+}
+
+footer .footer-buttom {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .footer-main,
+footer .footer-buttom {
+    padding: 10px;
+
+}
+
+footer .footer-buttom .icons ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+footer .footer-buttom .icons ul li a i {
+    color: white;
+    text-decoration: none;
+}
+
+footer .footer-buttom {
+
+    background-color: #5122d3;
+}
+
+footer .footer-main {
+    background-color: #622aff;
+}
+
+footer .footer-main ul {
+    list-style: none;
+}
+
+footer .footer-main ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media(min-width:1025px) {
+
+
+    .skills,
+    .projects {
+        display: grid;
+
+        grid-template-columns: repeat(4, minmax(25%, 1fr));
+    }
+}
