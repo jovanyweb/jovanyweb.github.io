@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -5,7 +7,7 @@
 }
 
 body {
-    font-family: Tahoma;
+    font-family: Roboto;
     background-color: #fafafa;
 }
 
@@ -157,6 +159,7 @@ h2:hover {
 
 .skills article,
 .projects article {
+    margin-bottom: 10px;
     padding: 10px;
     text-align: center;
     box-shadow: 0 0 5px 2px #00000049;
@@ -286,5 +289,11 @@ footer .footer-main ul li a {
         display: grid;
 
         grid-template-columns: repeat(4, minmax(25%, 1fr));
+    }
+
+    .skills article,
+    .projects article {
+
+        margin-bottom: 0;
     }
 }
