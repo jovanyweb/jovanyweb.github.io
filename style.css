@@ -96,6 +96,7 @@ h2:hover {
     margin: 10px 25%;
     gap: 30px;
     position: relative;
+    padding-bottom: 10px;
 }
 
 .history article {
@@ -143,7 +144,7 @@ h2:hover {
     left: 49.5%;
     translate: -50%;
     background-color: #5122d3;
-    height: 98%;
+    height: 105%;
 }
 
 
@@ -170,7 +171,12 @@ h2:hover {
 
 .skills article h3,
 .projects article h3 {
-    margin-top: 10px;
+    margin-top: 20px;
+}
+
+.projects article h3 a {
+
+    color: #5122d3;
 }
 
 .projects article img,
