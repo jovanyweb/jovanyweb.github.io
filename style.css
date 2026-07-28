@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 * {
     box-sizing: border-box;
     padding: 0;
@@ -7,8 +6,9 @@
 }
 
 body {
-    font-family: Roboto;
+    font-family: "Roboto Mono";
     background-color: #fafafa;
+    width:100%;
 }
 
 html {
@@ -48,12 +48,22 @@ header {
 }
 
 header h1 {
-    margin-bottom: 20px;
+    margin-bottom: 8pt;
     color: #fff;
+}
+header a{
+    background-color: #fff;
+    text-decoration: none;
+    font-size:14pt;
+    padding:10px;
+    border-radius:9999px;
+    color:#5122d3;
 }
 
 header p {
     color: #d6d6d6;
+    margin-bottom: 16pt;
+    
 }
 
 h2 {
@@ -138,6 +148,7 @@ h2:hover {
 .history::before {
     content: "";
     z-index: -2;
+    border-radius:9999px;
     position: absolute;
     top: 10px;
     width: 5px;
@@ -152,6 +163,7 @@ h2:hover {
 .skills,
 .projects {
     display: block;
+    width:100%;
     gap: 20px;
     width: fit-content;
     margin: auto;
@@ -161,8 +173,9 @@ h2:hover {
 .skills article,
 .projects article {
     margin-bottom: 10px;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
+
     box-shadow: 0 0 5px 2px #00000049;
     border-radius: 20px 10px;
     transition: all 0.3s;
@@ -175,12 +188,20 @@ h2:hover {
 }
 
 .projects article h3 a {
-
-    color: #5122d3;
+    color:#fff;
+    border-radius:99999px;
+    padding:10px 20px;
+    text-decoration: none;
+    background-color: #5122d3;
 }
 
 .projects article img,
 .skills article img {
+    aspect-ratio: 16/9;
+    width:50vw;
+
+    max-width:100%;
+    object-fit:contain;
     border-radius: 10px;
 }
 
@@ -193,28 +214,18 @@ h2:hover {
 section {
     margin: auto;
     width: 75%;
-}
-
-section {
     padding-bottom: 10px;
     margin-bottom: 10px;
     border-bottom: 3px solid #5122d3;
 }
+
 
 .skills-section {
 
     padding: 20px;
 }
 
-.projects article a {
-    color: black;
-    text-decoration: none;
 
-}
-
-.projects article img {
-    width: 100%;
-}
 
 .projects article .image-container {
 
