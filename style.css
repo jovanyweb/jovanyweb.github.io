@@ -28,11 +28,31 @@ nav {
   z-index: 999;
   background-color: var(--secondary-color);
   padding: 10px;
+  display:flex;
+  flex-direction: column-reverse;
+  
+
+}
+nav.full-nav-mobile{
+    height:100vh;
+}
+nav.full-nav-mobile ul{
+display:block;
+}
+nav button{
+    border:none;
+    text-align:center;
+    font-size:20pt;
+    color:#fff;
+    background-color:transparent;
 }
 
 nav ul {
-  display: flex;
+
   gap: 10px;
+  display:none;
+  height:100%;
+
   justify-content: center;
   list-style: none;
 }
@@ -315,7 +335,19 @@ footer .footer-main ul li a {
 
     grid-template-columns: repeat(4, minmax(25%, 1fr));
   }
-
+  nav{
+    display:block;
+    height:fit-content;
+   
+  }
+  nav button{
+      display:none;
+    }
+    nav ul{
+        height:fit-content;
+        
+    display:flex;
+  }
   .skills article,
   .projects article,
   .certificates article {
