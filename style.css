@@ -265,7 +265,7 @@ section {
 
 .projects article:hover .image-container::before {
 
-    background-color: rgba(81, 34, 211, 0.5);
+    background-color: #13407480;
 }
 
 footer {
