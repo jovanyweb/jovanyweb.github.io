@@ -2,4 +2,9 @@ pug/**
 scss/**
 node_modules/**
 package-lock.json
+<<<<<<< HEAD
 package.json
+=======
+package.json
+gulpfile.js
+>>>>>>> 24cac2e (Mobile responsive)
